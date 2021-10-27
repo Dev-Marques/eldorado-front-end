@@ -1,0 +1,10 @@
+<div class="dialog-label">
+<h1>{{data.id}}</h1>
+<h2>{{data.partNumber}}</h2>
+</div>
+<mat-dialog-actions>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+  <button mat-raised-button color="warn" (click)="destroy(data.id)">Deletar</button>
+
+</mat-dialog-actions>

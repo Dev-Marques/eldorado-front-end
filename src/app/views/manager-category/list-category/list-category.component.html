@@ -1,0 +1,14 @@
+
+
+
+<div *ngFor = "let category of categories" class="list">
+  {{category.name}}
+  <button mat-fab color="warn"  (click)="delete(category.name, category.id)" aria-label="Example icon button with a delete icon">
+    <mat-icon>delete</mat-icon>
+  </button>
+  </div>
+
+
+
+
+

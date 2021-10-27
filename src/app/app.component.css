@@ -1,0 +1,22 @@
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: flex-start;
+  min-width:100vw;
+  min-height: 10vh;
+  color: #f79d2e;
+  background-color: #000000;
+  text-decoration: none;
+
+}
+
+.link{
+  margin:1rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+

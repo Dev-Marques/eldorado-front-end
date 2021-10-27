@@ -1,0 +1,37 @@
+
+
+
+<h2 mat-dialog-title>Add Device</h2>
+<mat-dialog-content>
+  <form class="example-form" [formGroup]="deviceForm">
+    <mat-form-field class="example-form-full-width">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category" name="category">
+        <ng-container *ngFor="let category of DROPDOWN_LIST">
+
+        <mat-option value="{{category.id}}">{{category.name}}</mat-option>
+      </ng-container>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-form-full-width">
+      <mat-label>Color</mat-label>
+      <input matInput formControlName="color" name="color">
+    </mat-form-field>
+    <mat-form-field class="example-form-full-width">
+      <mat-label>partNumber</mat-label>
+      <input matInput formControlName="partNumber" name="partNumber" type="number">
+    </mat-form-field>
+
+
+
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="createDevice()">Salvar</button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-dialog-actions>
+
+
+
+

@@ -1,0 +1,12 @@
+
+
+
+
+<div class="list-label">Category<span></span>Color <span></span>partNumber</div>
+<div *ngFor = "let device of dvc" class="list">
+{{device.category.name}}<span></span>{{device.color}} <span></span> {{device.partNumber}}
+<button mat-fab color="warn" (click)="delete(device.id, device.partNumber)" aria-label="Example icon button with a delete icon">
+  <mat-icon>delete</mat-icon>
+</button>
+</div>
+
